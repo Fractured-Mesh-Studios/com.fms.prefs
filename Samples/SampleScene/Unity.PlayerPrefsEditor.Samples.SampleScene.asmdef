@@ -1,12 +1,14 @@
 {
     "name": "Unity.PlayerPrefsEditor.Samples.SampleScene",
+    "rootNamespace": "PrefsEditor.Samples",
     "references": [],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
