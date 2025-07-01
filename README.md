@@ -6,7 +6,9 @@
 [![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/dysman/bgTools-playerPrefsEditor/upm?label=GitURL-UPM)](https://github.com/Dysman/bgTools-playerPrefsEditor/tree/upm)
 [![openupm](https://img.shields.io/npm/v/com.bgtools.playerprefseditor?label=OpenUPM&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.bgtools.playerprefseditor)
 
-[<img align="right" src="https://img.shields.io/discord/431522155814191116?logo=Discord&logoColor=white&style=flat&label=Discord&labelColor=5865F2">](https://discord.gg/8rcPZrD)
+[<img align="right" src="https://img.shields.io/discord/431522155814191116?logo=Discord&logoColor=white&style=flat&label=Discord&labelColor=5865F2">](https://discord.gg/h2MaKyEQVm)
+
+
 
 Tool extension for the Unity Editor that enables easy access to the player preferences over a simple UI. Allows to view, add, remove and modify entries on the development machine.
 
