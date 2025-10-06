@@ -10,6 +10,7 @@ using PrefsEditor.Dialogs;
 using PrefsEditor.Utils;
 
 
+
 namespace PrefsEditor.PlayerPrefsEditor
 {
     public class EditorPreferencesEditorWindow : EditorWindow
@@ -633,29 +634,5 @@ namespace PrefsEditor.PlayerPrefsEditor
             }
             return userDefListCache[index];
         }
-
-#if (UNITY_EDITOR_LINUX || UNITY_EDITOR_OSX)
-        private string MakeValidFileName(string unsafeFileName)
-        {
-            string normalizedFileName = unsafeFileName.Trim().Normalize(NormalizationForm.FormD);
-            StringBuilder stringBuilder = new StringBuilder();
-
-            // We need to use a TextElementEmumerator in order to support UTF16 characters that may take up more than one char(case 1169358)
-            TextElementEnumerator charEnum = StringInfo.GetTextElementEnumerator(normalizedFileName);
-            while (charEnum.MoveNext())
-            {
-                string c = charEnum.GetTextElement();
-                if (c.Length == 1 && invalidFilenameChars.Contains(c[0]))
-                {
-                    stringBuilder.Append('_');
-                    continue;
-                }
-                UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c, 0);
-                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
-                    stringBuilder.Append(c);
-            }
-            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
-        }
-#endif
     }
 }
